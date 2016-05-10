@@ -94,6 +94,7 @@ GEM
       warden (~> 1.2.3)
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
+    elevatezoom-rails (1.0.0)
     erubis (2.7.0)
     execjs (2.6.0)
     ffaker (1.32.1)
@@ -324,6 +325,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  elevatezoom-rails (~> 1.0)
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
