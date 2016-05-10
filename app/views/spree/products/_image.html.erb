@@ -1,0 +1,23 @@
+<% if defined?(image) && image %>
+  <%= image_tag image.attachment.url(:product), :itemprop => "image" %>
+<% else %>
+
+
+
+<% @product.images.each do |i| %>
+<% if i.position == 1 %>
+
+
+
+<img id="zoom_01" src= "<%= i.attachment.url(:mini) %>" data-zoom-image= <%= i.attachment.url(:large) %> />
+
+<% end %>
+<% end %>
+<% end %>
+
+
+<script>
+    $('#zoom_01').elevateZoom(); 
+</script>
+
+
