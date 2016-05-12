@@ -7,7 +7,7 @@
 <% @product.images.each do |i| %>
 <% if i.position == 1 %>
 
-<img id="#zoom_<%= i.position %>" src= "<%= i.attachment.url(:product) %>" data-zoom-image= <%= i.attachment.url(:large) %> />
+<img id="zoom_<%= i.position %>" src= "<%= i.attachment.url(:product) %>" data-zoom-image= <%= i.attachment.url(:large) %> />
 
 <script>
     $('#zoom_<%= i.position %>').elevateZoom(); 

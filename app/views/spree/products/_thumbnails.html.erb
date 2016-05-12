@@ -3,7 +3,7 @@
   <ul id="product-thumbnails" class="thumbnails list-inline" data-hook>
     <% @product.images.each do |i| %>
       <li class='tmb-all tmb-<%= i.viewable.id %>'>
-<img id="#zoom_<%= i.position.to_i %>" src= "<%= i.attachment.url(:mini) %>" data-zoom-image= <%= i.attachment.url(:large) %> />
+<img id="zoom_<%= i.position %>" src= "<%= i.attachment.url(:mini) %>" data-zoom-image= <%= i.attachment.url(:large) %> />
 <script>
     $('#zoom_<%= i.position.to_i %>').elevateZoom(); 
  </script>
